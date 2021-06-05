@@ -11,7 +11,8 @@ body {
 }
 
 .start_btn,
-.info_box {
+.info_box,
+.quiz_box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -84,3 +85,95 @@ body {
     cursor: pointer;
 }
 
+.quiz_box {
+    width: 550px;
+    background: black;
+    border: 1px solid chartreuse;
+    border-radius: 5px;    
+}
+
+.quiz_box header {
+    position: relative;
+    z-index: 99;
+    height: 70px;
+    padding: 0px 30px;
+    background:rgb(85, 85, 85);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quiz_box header .title {
+    font-size: 20px;
+    /* font-weight: 600; */    
+}
+
+.quiz_box header .timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+    height: 45px;
+    background: black;
+    border: 1px solid chartreuse;
+    border-radius: 5px;
+    padding: 0px 8px;
+}
+
+.quiz_box header .timer .time_text {
+    /* font-weight: 400; */
+    font-size: 17px;
+    user-select: none;
+}
+
+ header .timer .timer_sec {
+    font-size: 13px;
+    /* font-weight: 500; */
+    background: rgb(85, 85, 85);
+    height: 30px;
+    width: 45px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid chartreuse;
+    user-select: none;
+}
+
+.quiz_box section {
+    padding: 25px 30px 20px 30px;
+    background: black;
+}
+
+.quiz_box section .que_text {
+    font-size: 25px;
+    /* font-weight: 600; */
+}
+
+.quiz_box section .option_list {
+    padding: 20px 0px;
+    display: block;
+}
+
+section .option_list .option {
+    background: black;
+    border: 1px solid chartreuse;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+    transition: all 0.5s ease;
+}
+
+section .option_list .option:hover {
+    background: rgb(85, 85, 85);
+}
+
+.option_list .option:last-child {
+    margin-bottom: 0px;
+}
+
+/* .option_list .option .icon */
