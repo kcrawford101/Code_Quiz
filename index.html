@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
     <title>Document</title>
 </head>
 <body>
@@ -12,17 +13,35 @@
 
     <!-- Info Box -->
     <div class="info_box">
-        <div class="info_title"></div>
-        <span>Quiz Rules</span>
+        <div class="info_title">
+            <span>Quiz Rules</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1. You have <span>2 minutes</span> to answer all five questions</div> 
+            <div class="info">2. Incorrect answers will shave <span>10 seconds</span> off of your total time left</div>
+            <div class="info">3. If the timer reaches <span>0 seconds</span> you lose</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
     </div>
-    <div class="info_list">
-        <div class="info">1. You have <span>2 minutes</span> to answer all five questions</div> 
-        <div class="info">2. If you select the incorrect answer, then <span>10 seconds</span> is shaved off of your total time left</div>
-        <div class="info">3. If the timer reaches <span>0 seconds</span> you lose</div>
-    </div>
-    <div class="buttons">
-        <button class="quit">Exit Quiz</button>
-        <button class="restart">Continue</button>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Code Quiz</div>
+            <div class="timer">
+                <div class="time_text">Time Left</div>
+                <div class="timer_sec">160</div>
+            </div>
+        </header>
+        <section>
+            <div class="que_text">
+                <span>What does HTML stand for?</span>
+                
+            </div>
+        </section>
     </div>
     
 </body>
