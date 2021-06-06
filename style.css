@@ -11,7 +11,8 @@ body {
 
 .start_btn,
 .info_box,
-.quiz_box {
+.quiz_box,
+.result_box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -82,10 +83,17 @@ body {
     border: 1px solid chartreuse;
     background: black;
     border-radius: 5px;
-    color:chartreuse;
     font-size: 16px;
     /* font-weight: 500;     */
     cursor: pointer;
+}
+
+.buttons button.quit:hover {
+    background: rgb(85, 85, 85);
+}
+
+.buttons button.restart:hover {
+    background: rgb(85, 85, 85);
 }
 
 .quiz_box {
@@ -195,7 +203,7 @@ section .option_list .option:hover {
 }
 
 footer .total_que span p {
-    font-weight: 500;
+    /* font-weight: 500; */
     padding: 0px 5px;
 }
 
@@ -207,7 +215,7 @@ footer .next_btn {
     height: 40px;
     padding: 0px 13px;
     font-size: 18px;
-    font-weight: 400;
+    /* font-weight: 400; */
     border: 1px solid chartreuse;
     background: black;
     border-radius: 5px;
@@ -216,5 +224,62 @@ footer .next_btn {
 }
 
 footer .next_btn:hover {
+    background: rgb(85, 85, 85);
+}
+
+.result_box {
+    background: black;
+    width: 450px;
+    padding: 25px 30px;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.result_box .icon {
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+.result_box .complete_text {
+    font-size: 20px;
+    /* font-weight: 500; */
+}
+
+.result_box .score_text span {
+    display: flex;
+    margin: 10px 0px;
+    font-size: 18px;
+    /* font-weight: 500; */
+}
+
+.score_text span p {
+    /* font-weight: 600; */
+    padding: 0px 4px;
+}
+
+.result_box .buttons {
+    display: flex;
+    margin: 20px 0px;
+}
+
+.result_box .buttons button {
+    margin: 0px 10px;
+    height: 45px;
+    padding: 0px 20px;
+    background: black;
+    border: none;
+    font-size: 18px;
+    /* font-weight: 500; */
+    border-radius: 5px;
+    border: 1px solid chartreuse;
+    cursor: pointer;
+    transition: all 0.50s ease;
+}
+
+button .restart:hover {
     background: rgb(85, 85, 85);
 }
