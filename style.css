@@ -21,13 +21,17 @@ body {
 /* Start Quiz Button Styling */
 .start_btn button {
     font-size: 25px;
-    color: chartreuse;
     padding: 15px 30px;
     outline: none;
     border: 2px solid chartreuse ;
     border-radius: 5px;
     background: black;
     cursor: pointer;
+    transition: all 0.50s ease;
+}
+
+.start_btn button:hover {
+    background: rgb(85, 85, 85);
 }
 
 .info_box {
@@ -85,6 +89,7 @@ body {
 }
 
 .quiz_box {
+    display: none;
     width: 550px;
     background: black;
     border: 1px solid chartreuse;
@@ -175,4 +180,41 @@ section .option_list .option:hover {
     margin-bottom: 0px;
 }
 
-/* .option_list .option .icon */
+.quiz_box footer {
+    height: 60px;
+    width: 100%;
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quiz_box footer .total_que span {
+    display: flex;
+    user-select: none;
+}
+
+footer .total_que span p {
+    font-weight: 500;
+    padding: 0px 5px;
+}
+
+footer .total_que span p:first-child {
+    padding-left: 0px;
+}
+
+footer .next_btn {
+    height: 40px;
+    padding: 0px 13px;
+    font-size: 18px;
+    font-weight: 400;
+    border: 1px solid chartreuse;
+    background: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+footer .next_btn:hover {
+    background: rgb(85, 85, 85);
+}
