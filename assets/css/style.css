@@ -213,11 +213,11 @@ section .option_list .option:hover {
     width: 26px;
     border-radius: 50%;
 }
-
+/* 
 .option_list .option .icon.tick{
     color: #23903c;
     border-color: #23903c;
-}
+} */
 
 .quiz_box footer {
     height: 60px;
