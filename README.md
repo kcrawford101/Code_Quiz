@@ -17,7 +17,7 @@
   Click 'Start Quiz' to begin the quiz.
 
   ## Screenshot
-  <img src='' width="750" height="350">
+  <img src='assets\images\quiz.JPG' width="500" height="350">
 
   
   ## Questions? You can reach me at:
