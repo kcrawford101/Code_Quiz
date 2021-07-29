@@ -9,6 +9,7 @@ body {
     background: black;
 }
 
+/* Text Boxes */
 .start_btn,
 .info_box,
 .quiz_box,
@@ -205,6 +206,17 @@ section .option_list .option:hover {
 
 .option_list .option:last-child {
     margin-bottom: 0px;
+}
+
+.option_list .option .icon {
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+}
+
+.option_list .option .icon.tick{
+    color: #23903c;
+    border-color: #23903c;
 }
 
 .quiz_box footer {
